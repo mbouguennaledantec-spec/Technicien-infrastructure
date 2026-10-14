@@ -1,0 +1,165 @@
+/* Charte graphique : 2 polices (Georgia pour les titres, Arial pour le texte)
+   et 3 tailles de caracteres (28px, 18px, 14px) */
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+/* Les balises de base */
+h1, h2, h4{
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 28px;
+}
+
+h5, h6, p, td, b, button, .btn{
+	font-size: 18px;
+}
+
+p{
+	line-height: 1.6;
+}
+
+/* Mise en valeur des titres */
+h1{
+	color: #0d6efd;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+h2{
+	color: #0d6efd;
+	border-bottom: 3px solid #0d6efd;
+	padding-bottom: 8px;
+	display: inline-block;
+}
+
+h4{
+	color: #0d6efd;
+	text-align: center;
+}
+
+/* Les liens : vert, orange au survol, rouge apres le clic */
+a:link{
+	color: green;
+}
+
+a:visited{
+	color: red;
+}
+
+a:hover{
+	color: orange;
+}
+
+a:active{
+	color: red;
+}
+
+.banner {
+	text-align: center;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+/* Image centree */
+.bannerimg {
+	text-align: center;
+}
+
+.imgmetier{
+	max-width: 200px;
+}
+
+.cv{
+	background-color: #f0f4f5;
+}
+
+.carre{
+	background-color: #f0f4f5
+}
+
+.footer{
+	text-align: center;
+}
+
+.tableCV{
+	list-style: none;
+}
+
+.espace {
+	margin-bottom: 10px;
+}
+
+.FootBanner {
+	margin-bottom: 9%;
+}
+
+.progress{
+	margin: 10px;
+}
+
+.competences{
+	text-align: center;
+	margin-top: 40px;
+}
+
+.card-title{
+	text-align: center;
+}
+
+.card-subtitle{
+	text-align: center;
+}
+
+.description{
+	text-align: justify;
+}
+
+#CardBg{
+	border-left: 8px solid #0d6efd;
+}
+
+.renforce{
+	font-weight: bold;
+}
+
+.montant{
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 28px;
+	text-align: center;
+	color: #0d6efd;
+}
+
+.stage{
+	text-align: center;
+}
+
+.bouton{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.credit{
+	font-size: 14px;
+	color: #6c757d;
+}
+
+/* Page multi support : on garde 3 tailles mais plus petites sur telephone */
+@media (max-width: 576px) {
+	body, h5, h6, p, td, b, button, .btn{
+		font-size: 16px;
+	}
+	h1, h2, h4, .montant{
+		font-size: 24px;
+	}
+	.credit{
+		font-size: 12px;
+	}
+	.description{
+		text-align: left;
+	}
+	.imgmetier{
+		max-width: 120px;
+	}
+}
